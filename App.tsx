@@ -31,10 +31,7 @@ function App(): React.JSX.Element {
     backgroundColor: Colors.lighter,
   };
 
-  const [tasks, setTasks] = useState<TaskType[]>([
-    {id: 1, title: 'Task 1', status: 'pending'},
-    {id: 2, title: 'Task 2', status: 'pending'},
-  ]);
+  const [tasks, setTasks] = useState<TaskType[]>([]);
   const [inputText, setInputText] = useState('');
   const [filteredTasks, setFilteredTasks] = useState<TaskType[]>([]);
   const [filterValue, setFilterValue] = useState({label: 'All', value: ''});
